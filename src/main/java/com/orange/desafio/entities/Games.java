@@ -30,11 +30,16 @@ public class Games implements Serializable{
 		
 	}
 
-	public Games(Long id, int[] numerosLoteria) {
+	
+
+	public Games(Long id, int[] numerosLoteria, User client) {
 		super();
 		this.id = id;
 		this.numerosLoteria = numerosLoteria;
+		this.client = client;
 	}
+
+
 
 	@Override
 	public int hashCode() {
